@@ -38,7 +38,7 @@ Command *initialize_command_list()
     show_line_number.flag = "-l";
     show_line_number.input = "";
 
-    Command *command_list = calloc(sizeof(Command), 5);
+    Command *command_list = malloc(sizeof(Command) * 5);
     command_list[0] = help;
     command_list[1] = max_line_number;
     command_list[2] = file;
